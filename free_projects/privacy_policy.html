@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>الشروط والأحكام - تطبيق مشاريعك | Terms & Conditions</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+      background: #f8f9fa;
+      color: #222;
+    }
+    .container {
+      max-width: 960px;
+      margin: auto;
+      padding: 2rem;
+      background: #fff;
+    }
+    h1 {
+      text-align: center;
+      color: #007BFF;
+    }
+    .lang-switch {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+    .lang-switch button {
+      padding: 0.5rem 1rem;
+      margin: 0 0.5rem;
+      border: none;
+      background-color: #007BFF;
+      color: #fff;
+      cursor: pointer;
+    }
+    .lang-switch button.active {
+      background-color: #0056b3;
+    }
+    .content {
+      display: none;
+    }
+    .content.active {
+      display: block;
+    }
+    ul {
+      line-height: 1.8;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1>الشروط والأحكام - تطبيق مشاريعك</h1>
+
+  <div class="lang-switch">
+    <button id="btn-ar" class="active">العربية</button>
+    <button id="btn-en">English</button>
+  </div>
+
+  <div id="arabic" class="content active" dir="rtl">
+    <ul>
+      <li>هذه الأحكام تنظم استخدمكم لتطبيق مشاريعك لذلك يرجى منكم قراءتها قبل الاستخدام التطبيق.</li>
+      <li>تنزيلكم للتطبيق يعني موافقتكم على هذه الأحكام والشروط.</li>
+      <li>يستخدم على الأجهزة الذكية.</li>
+      <li>يحتوي التطبيق على مشاريع مجانية لبعض اللغات البرمجية.</li>
+      <li>تعمل الخدمات من خلال توفر خدمة الإنترنت.</li>
+      <li>يتيح تنزيل الكود المصدري الخاص بالمشاريع.</li>
+      <li>يشمل اسم المشروع، صورة (إن وجدت)، وصف، اللغات المستخدمة، حجم الملف، وحقوق الملكية.</li>
+      <li>لسنا مسؤولين إذا تم استلام المشروع من عضو واحد فقط من الفريق.</li>
+      <li>واجهة بحث باسم المشروع ونوع اللغة البرمجية.</li>
+      <li>الهدف هو تعزيز التعلم العملي من المشاريع الجاهزة.</li>
+      <li>دعم فني متاح في حال وجود مشكلة.</li>
+      <li>يحق لأي مستخدم إرسال مشروعه مجانًا لعرضه في التطبيق.</li>
+      <li>النشر يتم فقط من خلال فريق الدعم.</li>
+      <li>يحتوي التطبيق على إعلانات.</li>
+      <li>أي تعديلات تعتبر سارية، وفي حال عدم الموافقة يجب التوقف عن الاستخدام.</li>
+    </ul>
+  </div>
+
+  <div id="english" class="content" dir="ltr">
+    <ul>
+      <li>These terms govern your use of the Mashariak app. Please read them before using the app.</li>
+      <li>Downloading the app indicates your agreement with these terms and conditions.</li>
+      <li>Designed for use on smart devices.</li>
+      <li>Mashariak includes some free projects in various programming languages.</li>
+      <li>The services require an active internet connection to function.</li>
+      <li>Users can download the source code of each project.</li>
+      <li>Each project includes its name, image (if available), description, languages used, source code file size, and the ownership rights remain with the project owner or publishing site.</li>
+      <li>We are not responsible if a project was submitted by only one member of a team.</li>
+      <li>The app includes a search interface by project name and programming language.</li>
+      <li>The purpose of the app is to help users gain practical learning through ready-made projects.</li>
+      <li>A support team is available in case of errors or issues.</li>
+      <li>Users can submit their own projects to be published for free via the support team.</li>
+      <li>Only the support team can publish projects on Mashariak.</li>
+      <li>The app contains advertisements.</li>
+      <li>Any modifications to the terms apply automatically. If you disagree, stop using the app. Continuing use means acceptance.</li>
+    </ul>
+  </div>
+</div>
+
+<script>
+  const btnAr = document.getElementById("btn-ar");
+  const btnEn = document.getElementById("btn-en");
+  const arabic = document.getElementById("arabic");
+  const english = document.getElementById("english");
+
+  btnAr.onclick = () => {
+    btnAr.classList.add("active");
+    btnEn.classList.remove("active");
+    arabic.classList.add("active");
+    english.classList.remove("active");
+  };
+
+  btnEn.onclick = () => {
+    btnEn.classList.add("active");
+    btnAr.classList.remove("active");
+    english.classList.add("active");
+    arabic.classList.remove("active");
+  };
+</script>
+
+</body>
+</html>
